@@ -9,4 +9,4 @@ Usage:
 $ go run main.go -pkg <package number>
 ```
 
-It'll return the current status and the change history.
+It'll return the current status and the change history, but feel free to extend with any data from the struct.
