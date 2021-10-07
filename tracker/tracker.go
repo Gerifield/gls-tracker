@@ -80,7 +80,7 @@ type PackageStatus struct {
 }
 
 func (t *Tracker) Get(packageID string) (PackageStatus, error) {
-	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf(glsURLPattern, *pkg), nil)
+	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf(glsURLPattern, packageID), nil)
 	if err != nil {
 		return PackageStatus{}, err
 	}
